@@ -1,0 +1,23 @@
+下載原始碼
+git clone https://github.com/maso0310/linebot.git
+
+linebot/app.py -->主程式
+
+line developer介面創立自己的massage api的provider
+
+查詢channelsecret
+複製密碼貼上app.py指定位置
+
+查詢channel token access
+複製token貼上app.py指定位置
+
+登入heroku
+heroku login(瀏覽器按下login)
+heroku git:remote -a 機器人名稱
+
+上傳機器人
+git init
+git add .
+git commit -am'ok'
+git push heroku master
+
