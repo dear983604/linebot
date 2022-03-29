@@ -52,8 +52,8 @@ def handle_message(event):
     message = LocationSendMessage(
         title='台北車站',
         address='台北車站',
-        latitude='25.0475613',
-        longitude='121.5173399'
+        latitude='25.047058',
+        longitude='121.519752'
 
     )
     line_bot_api.reply_message(event.reply_token, message)
