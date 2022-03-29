@@ -48,9 +48,16 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    message = ImageSendMessage(original_content_url='https://drive.google.com/file/d/1mRhI1EII3mQNa0h58TaFOgEBdXD_d8NI/view?usp=sharing',
+    preview_image_url='https://drive.google.com/file/d/1mRhI1EII3mQNa0h58TaFOgEBdXD_d8NI/view?usp=sharing' )
+    
+
+
+'''
+def handle_message(event):
     message = TextSendMessage(text='重複說:'+event.message.text)
     line_bot_api.reply_message(event.reply_token, message)
-
+'''
 
 
 '''
